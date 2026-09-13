@@ -4,7 +4,7 @@ import torch
 from sklearn.base import BaseEstimator
 
 from lf2i.calibration.p_values import augment_calibration_set
-from lf2i.calibration.torch_utils import FeedForwardNN, LearnerRegression, QuantileLoss
+from lf2i.estimators.torch_utils.quantile_regressor import FeedForwardNN, LearnerRegression, QuantileLoss
 from lf2i.test_statistics.waldo import Waldo
 from lf2i.utils.calibration_diagnostics_inputs import (
     preprocess_diagnostics,
